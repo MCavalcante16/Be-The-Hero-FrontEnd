@@ -29,6 +29,12 @@ export default function Logon() {
         }
     }
 
+    async function beHero(e){
+        e.preventDefault();
+
+        history.push('/incidents');
+    }
+
     return (
         <div className="logon-container">
             <section className="form">
@@ -42,12 +48,14 @@ export default function Logon() {
                         value={id}
                         onChange={e => setId(e.target.value)}
                     />
-                    <button className="button" type="submit">Entrar</button>
+                    <button className="button" type="submit">Entrar como ONG</button>
                 
                     <Link to="/register" className="back-link">
                         <FiLogIn size={16} color="#e02041"/>
                         Não tenho cadastro
                     </Link>
+
+                    <button className="buttonHero" onClick={beHero}>Quero ser um Herói</button>
                 </form>
             
             </section>

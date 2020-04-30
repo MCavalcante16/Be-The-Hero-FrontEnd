@@ -25,3 +25,25 @@
     margin-bottom: 32px;
 }
 
+.buttonHero {
+    width: 40%;
+    height: 100%;
+    background: #e02041;
+    border: 0;
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12.5px;
+    line-height: 60px;
+    transition: filter 0.2s;
+}
+
+.buttonHero:hover {
+    filter: brightness(90%);
+}
+
