@@ -18,7 +18,7 @@ export default function Logon() {
         e.preventDefault();
 
         try {
-            const response = await api.post('sessions', { id });
+            const response = await api.post('/sessions', { id });
 
             localStorage.setItem('ongName', response.data.name);
             localStorage.setItem('ongId', id);
