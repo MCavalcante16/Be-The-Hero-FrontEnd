@@ -38,6 +38,9 @@ export default function Profile() {
                         <strong>CASO: </strong>
                         <p>{incident.title}</p>
 
+                        <strong>ONG Responsável: </strong>
+                        <p>{incident.name}</p>
+
                         <strong>DESCRIÇÃO: </strong>
                         <p>{incident.description}</p>
                     
