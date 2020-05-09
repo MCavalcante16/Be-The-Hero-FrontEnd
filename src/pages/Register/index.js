@@ -69,9 +69,11 @@ export default function Register(){
                     value={email}
                     onChange={e => setEmail(e.target.value)}    
                 />
-                <input 
+                <NumberFormat 
                     type="whatsapp" 
                     placeholder="WhatsApp"
+                    format="(##)#####-####"
+                    mask="_"
                     value={whatsapp}
                     onChange={e => setWhatsapp(e.target.value)}    
                 />
