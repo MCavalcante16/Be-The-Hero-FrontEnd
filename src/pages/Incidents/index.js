@@ -48,7 +48,7 @@ export default function Profile() {
                         <p>{Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(incident.value)}</p>
 
                         <strong>WHATSAPP: </strong>
-                <       p>{'(' + incident.whatsapp.toString()[0] + incident.whatsapp.toString()[1] + ') ' + incident.whatsapp.slice(2, 7) + '-' + incident.whatsapp.slice(7) }</p>    
+                <       p>{incident.whatsapp}</p>    
 
                         <strong>EMAIL: </strong>
                         <p>{incident.email}</p>                   
