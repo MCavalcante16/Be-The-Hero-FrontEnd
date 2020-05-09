@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi'
+import NumberFormat from 'react-number-format';
+
 
 import logoImg from '../../assets/logo.svg';
 
@@ -68,9 +70,10 @@ export default function Register(){
                     onChange={e => setEmail(e.target.value)}    
                 />
                 <input 
-                    placeholder="Whatsapp"
+                    type="whatsapp" 
+                    placeholder="WhatsApp"
                     value={whatsapp}
-                    onChange={e => setWhatsapp(e.target.value)}
+                    onChange={e => setWhatsapp(e.target.value)}    
                 />
 
                 <div className="input-group">

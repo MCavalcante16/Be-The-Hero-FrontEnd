@@ -46,6 +46,10 @@
     margin-top: 8px;
 }
 
+.register-container .content form NumberFormat {
+    margin-top: 8px;
+}
+
 .register-container .content form .input-group {
     display: flex;
 }
